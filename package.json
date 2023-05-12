@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "rm -rf dist && parcel build src/index.html --public-url ./",
+    "open": "parcel src/index.html" 
+  },
+  "name": "navigation-site",
+  "version": "1.0.0",
+  "repository": "git@github.com:AlphaDZL/NavigationSite.git",
+  "author": "AlphaDZL <2113128657@qq.com>",
+  "license": "MIT"
+}
