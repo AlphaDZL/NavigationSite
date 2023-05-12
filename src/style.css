@@ -1,0 +1,157 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before {
+    box-sizing: border-box;
+}
+
+*:after {
+    box-sizing: border-box;
+}
+img{max-width: 100%;max-height: 100%}
+ul {
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* style */
+
+body {
+    background: #eee
+}
+
+.globalHeader {
+    margin: 20px 20px;
+}
+
+.globalMain {
+}
+.globalHeader >.searchForm{
+    display: flex;
+    justify-content: center;
+
+}
+
+.globalHeader>form > input {
+    width: 100%;
+    height: 40px;
+    margin-right: 10px;
+    padding: 0 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+.globalHeader >form> button {
+    white-space: nowrap;
+    padding: 0 28px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #0282B9;
+    color: white;
+    font-size: 16px;
+}
+
+.globalMain {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.siteList {
+    margin:20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.siteList > li {
+}
+
+.siteList .site {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 4px;
+    margin-bottom:20px;
+    border: 1px solid #dddddd;
+    padding: 10px 0;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.siteList .site > .logo {
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.siteList .site > .link {
+    font-size: 14px;
+    margin-top: 4px;
+}
+.siteList .site > .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    cursor:default;
+}
+.siteList .site:hover > .close{
+    display: block;
+}
+.siteList .addSiteButton {
+    padding: 10px 0;
+    background: white;
+    border: 1px solid  #dddddd;
+    border-radius: 4px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 20px;
+
+}
+.siteList .addSiteButton>.icon{
+    width: 64px;
+    height: 64px;
+}
+
+.siteList .addSiteButton>.text{
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+@media(min-width: 560px){
+    .globalHeader >.searchForm{
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .siteList{
+        margin-left: 0;
+        margin-right: -25px;
+        justify-content: flex-start;
+    }
+    .siteList .site {
+        margin-right: 25px;
+    }
+    .globalHeader{
+        margin: 80px 0 80px;
+    }
+}
