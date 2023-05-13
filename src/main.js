@@ -3,9 +3,9 @@
 //     {logo: './images/bilibili-logo.png',logoType:'image',url:'https://bilibili.com'}
 // ]
 
-let hashMap = JSON.parse(localStorage.getItem('x')) || [
+let hashMap = JSON.parse(localStorage.getItem('NavigationSiteStorage')) || [
     {logo: 'B', url: 'https://bilibili.com'},
-    {logo: 'B', url: 'https://bilibili.com'}
+    {logo: 'Q', url: 'https://mail.qq.com'}
 ]
 const simplifyUrl = function (url) {
     return url.replace('http://', '').replace('https://', '').replace('www.', '').replace(/\/.*/, '')
@@ -47,7 +47,7 @@ $('.addSiteButton').on('click', () => {
     render()
 })
 window.onbeforeunload = () => {
-    localStorage.setItem('x', JSON.stringify(hashMap))
+    localStorage.setItem('NavigationSiteStorage', JSON.stringify(hashMap))
 }
 $(document).on('keypress', (e) => {
     if (document.activeElement !== document.querySelector('input')) {
