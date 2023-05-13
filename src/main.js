@@ -1,8 +1,3 @@
-// let hashMap=[
-//     {logo:'A',logoType:'text',url:'https://bilibili.com'},
-//     {logo: './images/bilibili-logo.png',logoType:'image',url:'https://bilibili.com'}
-// ]
-
 let hashMap = JSON.parse(localStorage.getItem('NavigationSiteStorage')) || [
     {logo: 'B', url: 'https://bilibili.com'},
     {logo: 'Q', url: 'https://mail.qq.com'}

@@ -30,9 +30,6 @@ body {
 .globalHeader {
     margin: 20px 20px;
 }
-
-.globalMain {
-}
 .globalHeader >.searchForm{
     display: flex;
     justify-content: center;
@@ -70,10 +67,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.siteList > li {
-}
-
 .siteList .site {
     width: 160px;
     display: flex;
